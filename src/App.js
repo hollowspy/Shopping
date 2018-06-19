@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "./App.css";
 import Counter from "./containers/Counter";
 import ShoppingKartContainers from "./containers/ShoppingKart";
+import Calculator from "./containers/Calculator";
 
 //REDUX
 import { createStore } from "redux";
@@ -19,6 +20,7 @@ class App extends Component {
 		return (
 			<Provider store={store}>
 				<div>
+					<Calculator />
 					<Counter />
 					<ShoppingKartContainers />
 				</div>
